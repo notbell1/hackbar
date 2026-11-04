@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-bg-primary: #111318;
+  --color-brand-bg-secondary: #191D24;
+  --color-brand-bg-card: #202630;
+  --color-brand-border: #303744;
+  --color-brand-accent: #A3FF70;
+  --color-brand-text-primary: #F5F7FA;
+  --color-brand-text-secondary: #9CA3AF;
+  --color-brand-error: #EF4444;
+  --color-brand-warning: #F59E0B;
+  --color-brand-success: #22C55E;
+}
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrollbars for compact extension UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111318;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #303744;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}
+
+/* Code and mono input elements */
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
