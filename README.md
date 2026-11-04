@@ -37,7 +37,7 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="docs/images/preview.jpg" alt="XEOO HACKBAR Interface" width="100%" style="border-radius: 8px; border: 1px solid #252B37; box-shadow: 0 8px 30px rgba(0,0,0,0.6);" />
+  <img src="docs/images/preview.png" alt="XEOO HACKBAR Interface" width="100%" style="border-radius: 8px; border: 1px solid #252B37; box-shadow: 0 8px 30px rgba(0,0,0,0.6);" />
 </p>
 
 ---
