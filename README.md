@@ -1,175 +1,200 @@
-# XEOO HACKBAR
+<p align="center">
+  <img src="docs/images/logo.png" alt="XEOO HACKBAR Logo" width="110" height="110" style="border-radius: 20%; box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2);" />
+</p>
+
+<h1 align="center">🛡️ XEOO HACKBAR (v1.0.0)</h1>
 
 <p align="center">
-  <img src="docs/images/preview.jpg" alt="XEOO HACKBAR Interface" width="100%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+  <strong>Next-Generation Web Security Testing & HTTP Inspection for Chrome</strong>
 </p>
 
 <p align="center">
-  <strong>Modern, Local-First Web Security Testing & HTTP Inspection Chrome Extension</strong><br>
-  Built for authorized security assessments, bug bounty hunting, and web application auditing inside Google Chrome Side Panel.
+  <em>Perlindungan evaluasi keamanan dan pengujian penetrasi web tingkat lanjut — berjalan langsung di Side Panel Chrome dengan arsitektur 100% lokal, cepat, dan aman.</em>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Chrome_Extension-Manifest_V3-success?style=flat-square&logo=googlechrome" alt="Manifest V3" />
-  <img src="https://img.shields.io/badge/React-18.3-blue?style=flat-square&logo=react" alt="React 18" />
-  <img src="https://img.shields.io/badge/TypeScript-5.7_Strict-blue?style=flat-square&logo=typescript" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=flat-square&logo=tailwindcss" alt="Tailwind CSS v4" />
-  <img src="https://img.shields.io/badge/Vitest-69_Passed-A3FF70?style=flat-square&logo=vitest" alt="Tests" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-2ecc71?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/TYPESCRIPT-5.7-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/VITE-6.2-646cff?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/MANIFEST-V3-4285f4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Manifest V3" /></a>
+  <a href="PRIVACY.md"><img src="https://img.shields.io/badge/PRIVACY-100%25_LOCAL-00b894?style=for-the-badge&logo=shield&logoColor=white" alt="Privacy" /></a>
+</p>
+
+<p align="center">
+  <a href="#-preview">📸 Preview</a> •
+  <a href="#-fitur-utama">✨ Fitur Utama</a> •
+  <a href="#-apa-yang-baru-di-v100">🚀 Apa yang Baru di v1.0.0</a> •
+  <a href="#️-arsitektur">🛠️ Arsitektur</a> •
+  <a href="#-instalasi">📦 Instalasi</a> •
+  <a href="#-penggunaan">💬 Penggunaan</a> •
+  <a href="PRIVACY.md">🔒 Privasi</a> •
+  <a href="https://github.com/notbell1/xeoo-hackbar/issues">🐛 Lapor Bug</a> •
+  <a href="LICENSE">📄 Lisensi</a>
+</p>
+
+<hr />
+
+## 📸 Preview
+
+<p align="center">
+  <img src="docs/images/preview.jpg" alt="XEOO HACKBAR Interface" width="100%" style="border-radius: 8px; border: 1px solid #252B37; box-shadow: 0 8px 30px rgba(0,0,0,0.6);" />
 </p>
 
 ---
 
-## Overview
+## ✨ Fitur Utama
 
-**XEOO HACKBAR** is a high-performance, dark-themed browser extension for Google Chrome (Manifest V3) running directly in the browser's **Side Panel**. Inspired by classic penetration testing toolbars, it elevates the workflow into a secure, responsive, local-first platform featuring advanced request manipulation, extensive SQL/DIOS payload builders, live encoding suites, and defensive header security analysis.
+### 1. HTTP Request Builder & URL Precision Parser
+- **Method Lengkap**: Mendukung `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, `OPTIONS`.
+- **Sinkronisasi Tab Aktif (*Active Tab Sync*)**: Terhubung langsung dengan tab browser yang sedang dibuka (`Sync Tab: ON/OFF`).
+- **Pembedah Parameter URL**: Memisahkan protokol, host, port, path, parameter kueri, dan hash secara visual dengan pembaruan dua arah tanpa risiko korupsi karakter.
+- **Dukungan Tipe Body**: Raw text, JSON (dengan tombol format), dan `application/x-www-form-urlencoded`.
 
----
-
-## Key Features
-
-### 1. HTTP Request Builder & URL Manipulator
-- **Method Support**: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, `OPTIONS`.
-- **Active Tab Sync**: Instant synchronization with the currently open browser tab (`Sync Tab: ON/OFF`).
-- **Precision URL Parser**: Disassembles Target URLs into protocol, hostname, port, path, query parameters, and hash with real-time bidirectional updates without character corruption.
-- **Request Body Modes**: Raw text, JSON, and `application/x-www-form-urlencoded` key-value pairs.
-
-### 2. Comprehensive Security Template Library (170+ Audited Payloads)
-Structured across 14 top-level categories and dozens of subcategories:
-- **SQL Basic**: Auth bypass, Boolean-based blind, Time-based blind, Stacked queries, SQL clauses, and comment vectors.
-- **Union-Based & WAF-Based**: Full coverage for MySQL, PostgreSQL, and Microsoft SQL Server.
+### 2. Security Template Library (170+ Payload Teruji)
+Tersusun rapi dalam 14 kategori utama dan puluhan subkategori terstruktur:
+- **SQL Basic**: Auth bypass, Boolean blind, Time blind, Stacked queries, klausa SQL, dan pemisah komentar.
+- **Union-Based & WAF-Based**: Cakupan penuh untuk MySQL, PostgreSQL, dan Microsoft SQL Server.
 - **DIOS (Dump In One Shot)**:
-  - 100% syntactically audited and verified templates.
-  - Zero placeholder / unfinished slots.
-  - Information schema, sys-schema, and InnoDB internal table catalog extractions.
-  - Version comments (`/*!50000...*/`), inline comments (`/**/`), whitespace substitutions (`%0a`, `%09`, `%0c`, `%0d`), and URL hex variants.
-- **Author Watermark & Custom Signature Modal**:
-  - Dynamic author branding (`ZXMarchia`) injected into MySQL DIOS payloads.
-  - Live hex generator with neon themes: **Neon Green Glow (`#A3FF70`)**, **Neon Red Fire (`#FF3344`)**, **Cyber Cyan (`#00FFFF`)**, **Electric Gold (`#FFE600`)**, and **ASCII Frame**.
-- **Specialized Modules**: LFI/Path Traversal, XSS, LDAP/Fuzzing, Out-File, Custom Based, HTML containers, Defacement PoCs, and Links.
+  - 100% tervalidasi secara sintaks dan delimiter komentar.
+  - Bebas dari slot kosong atau placeholder (`SOON !!`).
+  - Ekstraksi skema `information_schema`, internal tabel `sys.schema`, dan tabel mesin `innodb_index_stats`.
+  - Varian WAF bypass: Version comments (`/*!50000...*/`), inline comments (`/**/`), substitusi spasi (`%0a`, `%09`, `%0c`, `%0d`), dan URL/HTML hex.
+- **Custom Signature & Watermarking Generator**:
+  - Generator tanda tangan hex dinamis dengan author default **`ZXMarchia`**.
+  - Pilihan tema warna: **Neon Green Glow (`#A3FF70`)**, **Neon Red Fire (`#FF3344`)**, **Cyber Cyan (`#00FFFF`)**, **Electric Gold (`#FFE600`)**, dan **ASCII Frame**.
+- **Modul Keamanan Khusus**: XSS, LFI/Path Traversal, LDAP/Fuzzing, Out-File, Custom Based, HTML Container, dan Link referensi keamanan.
 
 ### 3. Quick Conversion Bar (Adaptive 3D Cyber Bevel)
-- One-click text encoding and decoding directly on cursor selection or entire inputs:
-  - `0xHEX` (Hex string literal)
-  - `%URL` (Standard and full hex encoding)
-  - `BASE64`
-  - `0bBINARY` (8-bit binary)
-  - `\UNIC00DE` (`\uXXXX` unicode escapes)
-  - `\xHEX` (C-style hexadecimal)
-  - `&#xHEX;` (HTML hex entities)
+- Tombol konversi instan untuk teks yang dipilih atau seluruh input:
+  - `0xHEX` (String literal heksadesimal)
+  - `%URL` (Standard & full hex URL encoding)
+  - `BASE64` (Encode & decode Base64)
+  - `0bBINARY` (Representasi biner 8-bit)
+  - `\UNIC00DE` (Escape sequence unicode `\uXXXX`)
+  - `\xHEX` (C-style hex encoding)
+  - `&#xHEX;` (Entitas HTML hex)
   - `Base64 spacer`
-- **Dynamic Responsive Layout**: Uses `ResizeObserver` to seamlessly wrap into 2 balanced rows on standard viewports (< 780px) and 4 rows on narrow side panels (< 390px) without button clipping.
+- **Tata Letak Responsif**: Menggunakan `ResizeObserver` untuk otomatis turun menjadi 2 baris (layar < 780px) atau 4 baris (layar < 390px) tanpa tombol terpotong.
 
 ### 4. Payloads & Test Vector Repository
-- Built-in library of 31+ real-world pentest vectors categorized across SQLi, XSS, LFI, RCE, SSRF, SSTI, XXE, and Open Redirects.
-- Instant search filtering, tag queries, favorites toggle, and direct "+URL", "Set URL", and "+Body" actions.
-- Full JSON export and import capabilities for custom wordlist backup.
+- Pustaka bawaan 31 vektor uji standar (SQLi, XSS, LFI, RCE, SSRF, SSTI, XXE, Open Redirect).
+- Navigasi strip kategori dengan tombol panah `<` `>`, dukungan mouse wheel horizontal, pencarian instan, dan penanda favorit.
+- Ekspor dan impor data kustom dalam format JSON.
 
-### 5. Multi-Format Encoder / Decoder Suite
-Dedicated interactive encoding workbench with simultaneous conversions:
+### 5. Multi-Format Encoder / Decoder Workbench
+Workbench mandiri untuk transformasi data simultan:
 - URL Decode / Encode (Component & RFC 3986 Full Hex)
 - Base64 Encode / Decode
-- Hex / ASCII conversions
-- HTML Entities (Named & Numeric)
-- MD5 & SHA-256 cryptographic hashing
+- Hexadecimal & ASCII
+- Entitas HTML (Named & Numeric)
+- Hashing Kriptografis MD5 & SHA-256
 
 ### 6. Defensive Security & Response Inspector
-- **Automated Security Header Analysis**: Grades response posture for CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy.
-- **Information Leak & Technology Detection**: Alerts when `Server`, `X-Powered-By`, or debug headers leak software versions.
-- **WAF Signature Detector**: Detects Cloudflare, ModSecurity, AWS WAF, and Akamai block signatures with direct advice.
-- **Response Viewer**: Pretty, Raw, and Headers views with size, execution timing, and status tracking.
+- **Audit Response Security Headers**: Menilai kepatuhan CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, dan Permissions-Policy.
+- **Pendeteksi Kebocoran Versi**: Memperingatkan jika header `Server` atau `X-Powered-By` mengekspos versi perangkat lunak target.
+- **Pendeteksi Firewall (WAF)**: Mendeteksi pola blokir Cloudflare, ModSecurity, AWS WAF, dan Akamai beserta rekomendasi bypass.
+- **Tab Respons**: Tampilan Pretty, Raw, dan Headers dengan kalkulator waktu dan ukuran body.
 
-### 7. History, Evidence & Scope Guard
-- **Encrypted Local Storage**: IndexedDB persistence (via Dexie v4) keeping all data 100% inside your browser.
-- **Automatic Redaction**: Masking of authorization headers, session cookies, and API keys before saving logs.
-- **Evidence Reporting**: One-click export to Markdown (`.md`) audit reports and JSON log bundles.
-- **Scope Guardian**: Prevents accidental out-of-scope testing and blocks loopback/intranet requests by default.
+### 7. History, Evidence & Scope Guardian
+- **Penyimpanan Lokal Terenkripsi**: Menggunakan IndexedDB (Dexie v4) yang tersimpan 100% di browser lokal Anda.
+- **Redaksi Kredensial Otomatis**: Menghapus token `Authorization`, cookie sesi (`Cookie`, `Set-Cookie`), dan `API keys` sebelum disimpan ke log.
+- **Laporan Bukti**: Ekspor log permintaan satu-klik ke format Markdown (`.md`) dan JSON.
+- **Scope Guardian**: Memblokir permintaan ke jaringan internal/localhost secara default untuk mencegah serangan DNS rebinding.
 
 ---
 
-## Tech Stack
+## 🚀 Apa yang Baru di v1.0.0
 
-| Component | Technology |
+- ⚡ **Rilis Awal Berbasis Manifest V3 Side Panel**: Performa ultra-cepat dan hemat memori.
+- 🎨 **Redesain Antarmuka Cyberpunk Dark**: Tombol bevel 3D retro dengan aksen hijau neon `#A3FF70`.
+- 🛡️ **Integrasi Modul DIOS Terlengkap**: 170+ template DIOS tanpa slot kosong, dilengkapi generator watermark author `ZXMarchia`.
+- 🔍 **Suite Audit Sintaks Otomatis**: Verifikasi integritas tanda kurung dan delimiter komentar pada seluruh payload.
+- 📱 **Navigasi Kategori Responsif**: Penambahan tombol scroll geser dan mouse-wheel pada bilah kategori.
+- 📜 **Sinkronisasi Dokumen Lengkap**: Penyelarasan penuh antara README, Security, Privacy, Disclaimer, dan Changelog.
+
+---
+
+## 🛠️ Arsitektur & Tech Stack
+
+| Komponen | Teknologi |
 | :--- | :--- |
-| **Extension Platform** | Google Chrome Desktop (Manifest V3 Side Panel API) |
-| **Frontend Framework** | React 18.3 (Strict Mode) |
-| **Language** | TypeScript 5.7 (Strict Type Checking) |
+| **Platform Ekstensi** | Google Chrome Desktop (Manifest V3 Side Panel API) |
+| **Framework UI** | React 18.3 (Strict Mode) |
+| **Bahasa Pemrograman** | TypeScript 5.7 (Strict Type Checking) |
 | **Styling** | Tailwind CSS v4 |
 | **State Management** | Zustand v5 |
-| **Local Database** | Dexie.js v4 (IndexedDB) |
-| **Icons** | Lucide React |
+| **Database Lokal** | Dexie.js v4 (IndexedDB) |
+| **Ikon Antarmuka** | Lucide React |
 | **Build Tooling** | Vite v6 |
-| **Testing** | Vitest v3 |
+| **Testing Engine** | Vitest v3 |
+
+Untuk rincian arsitektur teknis lebih lanjut, silakan baca [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 
-## Installation & Setup
+## 📦 Instalasi & Cara Menjalankan
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) >= 20
-- [pnpm](https://pnpm.io/) (recommended) or `npm`
+### Kebutuhan Sistem
+- [Node.js](https://nodejs.org/) versi 20 ke atas
+- [pnpm](https://pnpm.io/) (sangat direkomendasikan) atau `npm`
 
-### Building from Source
+### Kompilasi dari Source Code
 
 ```bash
-# 1. Clone repository
-git clone https://github.com/your-username/xeoo-hackbar.git
+# 1. Clone repositori
+git clone https://github.com/notbell1/xeoo-hackbar.git
 cd xeoo-hackbar
 
-# 2. Install dependencies
+# 2. Pasang dependensi
 pnpm install
 
-# 3. Build production bundle
+# 3. Build bundle produksi
 pnpm run build
 ```
 
-The compiled extension files will be created in the `dist/` directory.
+Hasil kompilasi siap pakai akan terbentuk di dalam folder `dist/`.
 
-### Loading into Google Chrome
+### Memasang ke Google Chrome
 
-1. Open Google Chrome and visit `chrome://extensions/`.
-2. Toggle **Developer mode** on (top right corner).
-3. Click **Load unpacked**.
-4. Select the `dist/` folder from this project directory.
-5. Open the Side Panel in Chrome and select **XEOO HACKBAR** or click the extension toolbar icon.
-
----
-
-## Verification & Testing
-
-The project maintains 100% passing unit tests covering encoding algorithms, URL parsers, header analyzers, scope filters, and DIOS syntax integrity:
-
-```bash
-# Run all 69 unit tests
-pnpm test
-```
-
-Audit validation criteria:
-- **Parentheses Balance**: Verified on all 170+ subqueries.
-- **Comment Delimiters**: 100% closed `/* ... */` comment pairs.
-- **Hex Literals**: Compliant `0x...` formatting for MySQL lexers.
-- **Cleanliness**: 0 undefined slots or draft placeholders.
+1. Buka browser Google Chrome dan buka alamat `chrome://extensions/`.
+2. Aktifkan **Developer mode** melalui toggle di pojok kanan atas.
+3. Klik tombol **Load unpacked** di pojok kiri atas.
+4. Pilih folder `dist/` yang berada di dalam direktori proyek ini.
+5. Buka **Side Panel** di Google Chrome, lalu pilih **XEOO HACKBAR**.
 
 ---
 
-## Architecture & Documentation
+## 💬 Penggunaan & Workflow
 
-- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — Comprehensive technical architecture and module specifications.
-- [SECURITY.md](SECURITY.md) — Security policy, operational threat model, and vulnerability reporting.
-- [PRIVACY.md](PRIVACY.md) — Local-first data handling and zero-telemetry policy.
-- [DISCLAIMER.md](DISCLAIMER.md) — Legal terms of use and liability limitations.
-- [CHANGELOG.md](CHANGELOG.md) — Version history and release notes.
-
----
-
-## Disclaimer & Legal Notice
-
-This software is developed strictly for **authorized penetration testing, CTF security competitions, web development debugging, and academic security research**. Testing web applications without prior mutual authorization is illegal under applicable cybercrime legislation. The authors and contributors assume zero liability for misuse. Refer to [DISCLAIMER.md](DISCLAIMER.md) and [SECURITY.md](SECURITY.md) for full terms.
+1. **Target Capture**: Klik tombol **Sync Tab: ON** atau **Active Tab** untuk mengambil URL dari tab yang sedang dibuka.
+2. **Parameter Tuning**: Buka sub-tab **Params** untuk menambah atau memodifikasi parameter kueri.
+3. **Template Insertion**: Pilih kategori (misal: `SQL BASIC`, `UNION BASED`, `WAF BASED`) pada bilah template untuk menyisipkan payload langsung ke posisi kursor editor.
+4. **Watermarking**: Pada pemilihan template DIOS, gunakan popup modal untuk memilih gaya warna author watermark Anda (`ZXMarchia`).
+5. **Execution**: Klik **Execute** untuk mengeksekusi request di tab browser atau **Fetch** untuk memeriksa respons langsung di Side Panel.
 
 ---
 
-## Author & Credits
+## 🔒 Privasi & Keamanan Data
+
+XEOO HACKBAR dirancang dengan prinsip privasi tanpa kompromi:
+- **Zero Telemetry**: Tidak ada analitik, pelacakan data, atau komunikasi ke server pihak ketiga.
+- **100% Offline Capable**: Seluruh dependensi, font, dan stylesheet berjalan lokal di browser Anda.
+- **Redaksi Kredensial**: Token otentikasi otomatis disamarkan sebelum dicatat di log lokal.
+
+Baca kebijakan privasi lengkap di [PRIVACY.md](PRIVACY.md).
+
+---
+
+## ⚖️ Disclaimer & Batasan Hukum
+
+Perangkat lunak ini dikembangkan secara eksklusif untuk **pengujian keamanan berizin, kompetisi CTF, riset akademik, dan debugging aplikasi web**. Melakukan pengujian penetrasi tanpa izin tertulis dari pemilik sistem adalah tindakan ilegal. Pengembang tidak bertanggung jawab atas penyalahgunaan software ini.
+
+Baca ketentuan hukum selengkapnya di [DISCLAIMER.md](DISCLAIMER.md) dan kebijakan keamanan di [SECURITY.md](SECURITY.md).
+
+---
+
+## 📄 Lisensi & Kredit
 
 - **Author**: Zone Xploiter / ZXMarchia
-- **Project**: XEOO HACKBAR (v1.0.0)
-- **License**: [MIT License](LICENSE)
+- **Repositori**: [https://github.com/notbell1/xeoo-hackbar](https://github.com/notbell1/xeoo-hackbar)
+- **Lisensi**: [MIT License](LICENSE)
