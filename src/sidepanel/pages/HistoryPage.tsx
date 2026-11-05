@@ -49,7 +49,7 @@ export const HistoryPage: React.FC = () => {
   };
 
   const exportToMarkdown = () => {
-    let md = `# XEOO HACKBAR Request History & Evidence Report\nGenerated: ${new Date().toLocaleString()}\n\n`;
+    let md = `# ZX HACKBAR Request History & Evidence Report\nGenerated: ${new Date().toLocaleString()}\n\n`;
     history.forEach((h, i) => {
       md += `### ${i + 1}. [${h.method}] ${h.url}\n`;
       md += `- **Status**: ${h.status} ${h.statusText}\n`;

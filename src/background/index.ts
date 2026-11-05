@@ -22,7 +22,7 @@ if (typeof chrome !== 'undefined' && chrome.runtime?.onInstalled) {
         chrome.contextMenus.create(
           {
             id: 'xeoo-send-to-hackbar',
-            title: 'Open URL in XEOO HACKBAR',
+            title: 'Open URL in ZX HACKBAR',
             contexts: ['link', 'page']
           },
           () => {

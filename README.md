@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/images/logo.png" alt="XEOO HACKBAR Logo" width="110" height="110" style="border-radius: 20%; box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2);" />
+  <img src="docs/images/logo.png" alt="ZX HACKBAR Logo" width="110" height="110" style="border-radius: 20%; box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2);" />
 </p>
 
-<h1 align="center">🛡️ XEOO HACKBAR (v1.0.0)</h1>
+<h1 align="center">🛡️ ZX HACKBAR (v1.1.0)</h1>
 
 <p align="center">
   <strong>Next-Generation Web Security Testing & HTTP Inspection for Chrome</strong>
@@ -23,7 +23,7 @@
 <p align="center">
   <a href="#-preview">📸 Preview</a> •
   <a href="#-fitur-utama">✨ Fitur Utama</a> •
-  <a href="#-apa-yang-baru-di-v100">🚀 Apa yang Baru di v1.0.0</a> •
+  <a href="#-apa-yang-baru-di-v100">🚀 Apa yang Baru di v1.1.0</a> •
   <a href="#️-arsitektur">🛠️ Arsitektur</a> •
   <a href="#-instalasi">📦 Instalasi</a> •
   <a href="#-penggunaan">💬 Penggunaan</a> •
@@ -37,7 +37,7 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="docs/images/preview.png" alt="XEOO HACKBAR Interface" width="100%" style="border-radius: 8px; border: 1px solid #252B37; box-shadow: 0 8px 30px rgba(0,0,0,0.6);" />
+  <img src="docs/images/preview.png" alt="ZX HACKBAR Interface" width="100%" style="border-radius: 8px; border: 1px solid #252B37; box-shadow: 0 8px 30px rgba(0,0,0,0.6);" />
 </p>
 
 ---
@@ -103,7 +103,7 @@ Workbench mandiri untuk transformasi data simultan:
 
 ---
 
-## 🚀 Apa yang Baru di v1.0.0
+## 🚀 Apa yang Baru di v1.1.0
 
 - ⚡ **Rilis Awal Berbasis Manifest V3 Side Panel**: Performa ultra-cepat dan hemat memori.
 - 🎨 **Redesain Antarmuka Cyberpunk Dark**: Tombol bevel 3D retro dengan aksen hijau neon `#A3FF70`.
@@ -143,7 +143,7 @@ Untuk rincian arsitektur teknis lebih lanjut, silakan baca [ARCHITECTURE.md](doc
 ```bash
 # 1. Clone repositori
 git clone https://github.com/Zone-Xploiter/hackbar.git
-cd xeoo-hackbar
+cd zx-hackbar
 
 # 2. Pasang dependensi
 pnpm install
@@ -160,7 +160,7 @@ Hasil kompilasi siap pakai akan terbentuk di dalam folder `dist/`.
 2. Aktifkan **Developer mode** melalui toggle di pojok kanan atas.
 3. Klik tombol **Load unpacked** di pojok kiri atas.
 4. Pilih folder `dist/` yang berada di dalam direktori proyek ini.
-5. Buka **Side Panel** di Google Chrome, lalu pilih **XEOO HACKBAR**.
+5. Buka **Side Panel** di Google Chrome, lalu pilih **ZX HACKBAR**.
 
 ---
 
@@ -176,7 +176,7 @@ Hasil kompilasi siap pakai akan terbentuk di dalam folder `dist/`.
 
 ## 🔒 Privasi & Keamanan Data
 
-XEOO HACKBAR dirancang dengan prinsip privasi tanpa kompromi:
+ZX HACKBAR dirancang dengan prinsip privasi tanpa kompromi:
 - **Zero Telemetry**: Tidak ada analitik, pelacakan data, atau komunikasi ke server pihak ketiga.
 - **100% Offline Capable**: Seluruh dependensi, font, dan stylesheet berjalan lokal di browser Anda.
 - **Redaksi Kredensial**: Token otentikasi otomatis disamarkan sebelum dicatat di log lokal.

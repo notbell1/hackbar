@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module WafBasedDiosPostgre
  * @author Zone Xploiter / ZXMarchia

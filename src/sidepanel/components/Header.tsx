@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           <button
             type="button"
             onClick={() => setShowAboutModal(true)}
-            title="About XEOO HACKBAR"
+            title="About ZX HACKBAR"
             className="flex items-center space-x-1 text-[11px] font-semibold px-2 py-0.5 rounded bg-[#202630] hover:bg-[#303744] text-[#A3FF70] border border-[#A3FF70]/40 hover:border-[#A3FF70] transition-all shadow-sm cursor-pointer"
           >
             <Info size={11} />
@@ -60,8 +60,8 @@ export const Header: React.FC = () => {
               alt="Zone Xploiter"
               className="w-3.5 h-3.5 rounded-full object-cover shrink-0"
             />
-            <span className="hidden min-[480px]:inline">v1.0.0 • Zone Xploiter</span>
-            <span className="min-[480px]:hidden">v1.0</span>
+            <span className="hidden min-[480px]:inline">v1.1.0 • Zone Xploiter</span>
+            <span className="min-[480px]:hidden">v1.1</span>
             <ExternalLink size={9} />
           </a>
         </div>
@@ -121,7 +121,7 @@ export const Header: React.FC = () => {
                   className="w-5 h-5 rounded-full object-cover border border-[#A3FF70]/60"
                 />
                 <span className="font-bold text-xs tracking-wider text-[#F5F7FA]">
-                  ABOUT <span className="text-[#A3FF70]">XEOO HACKBAR</span>
+                  ABOUT <span className="text-[#A3FF70]">ZX HACKBAR</span>
                 </span>
               </div>
               <button
@@ -203,7 +203,7 @@ export const Header: React.FC = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#9CA3AF]">Version:</span>
-                    <span className="text-[#38BDF8]">v1.0.0</span>
+                    <span className="text-[#38BDF8]">v1.1.0</span>
                   </div>
                 </div>
                 <div className="pt-1.5 mt-1.5 border-t border-[#303744] text-[10px] text-center text-[#9CA3AF]">

@@ -44,7 +44,7 @@ export class HackbarDatabase extends Dexie {
   payloads!: Table<PayloadItem, number>;
 
   constructor() {
-    super('XeooHackbarDB');
+    super('ZXHackbarDB');
     this.version(1).stores({
       scopes: '++id, origin, hostPattern, enabled, createdAt',
       history: '++id, url, method, status, timestamp, isEvidence',

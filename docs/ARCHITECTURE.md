@@ -1,8 +1,8 @@
-# XEOO HACKBAR — ARCHITECTURE SPECIFICATION
+# ZX HACKBAR — ARCHITECTURE SPECIFICATION
 
 ## 1. High-Level Architectural Overview
 
-XEOO HACKBAR adopts a modular, clean-layer architecture designed for Manifest V3:
+ZX HACKBAR adopts a modular, clean-layer architecture designed for Manifest V3:
 
 ```text
 ┌────────────────────────────────────────────────────────┐
@@ -39,11 +39,11 @@ XEOO HACKBAR adopts a modular, clean-layer architecture designed for Manifest V3
 - **Security Analyzer**: Passive response inspection evaluating defensive headers (`CSP`, `HSTS`, `X-Frame-Options`, etc.).
 
 ### Data Layer (`src/storage/`)
-- **Dexie Database (`XeooHackbarDB`)**: High-performance local IndexedDB managing `scopes`, `history`, and `payloads`.
+- **Dexie Database (`ZXHackbarDB`)**: High-performance local IndexedDB managing `scopes`, `history`, and `payloads`.
 - **Repository Pattern**: Encapsulates data persistence (`ScopeRepository`, `HistoryRepository`, `PayloadRepository`, `SettingsRepository`) with sanitization and redaction rules.
 
 ### Background Service Worker (`src/background/`)
 - Handles side panel open triggers via `chrome.sidePanel.setPanelBehavior`.
-- Manages Context Menu events (*"Open URL in XEOO HACKBAR"*).
+- Manages Context Menu events (*"Open URL in ZX HACKBAR"*).
 - Mediates permission inquiries via `chrome.permissions`.
 

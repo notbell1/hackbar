@@ -211,7 +211,7 @@ export const otherCategory: TemplateCategory = {
           id: 'crlf-set-cookie',
           name: 'CRLF Set-Cookie Injection',
           description: 'Injects Set-Cookie header into HTTP response stream',
-          content: '%0d%0aSet-Cookie: session=xeoo_hackbar_test; path=/'
+          content: '%0d%0aSet-Cookie: session=zx_hackbar_test; path=/'
         },
         {
           id: 'crlf-custom-header',

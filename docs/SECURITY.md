@@ -1,7 +1,7 @@
-# Security Policy — XEOO HACKBAR
+# Security Policy — ZX HACKBAR
 
-**Project:** XEOO HACKBAR  
-**Version:** v1.0.0  
+**Project:** ZX HACKBAR  
+**Version:** v1.1.0  
 **Author:** Zone Xploiter / ZXMarchia  
 **License:** MIT License  
 **Last Updated:** November 2026  
@@ -10,12 +10,12 @@
 
 ## 1. Scope & Security Architecture
 
-XEOO HACKBAR is designed with a strict **security-by-default, local-first** architecture for authorized penetration testing, security assessments, and educational research.
+ZX HACKBAR is designed with a strict **security-by-default, local-first** architecture for authorized penetration testing, security assessments, and educational research.
 
 ### Core Security Principles
 
 - **SEC-01: Zero Static Host Permissions**  
-  XEOO HACKBAR does not declare static wildcards in `host_permissions` during installation. Network access is governed strictly by Chrome's `optional_host_permissions` requested on-demand per authorized domain.
+  ZX HACKBAR does not declare static wildcards in `host_permissions` during installation. Network access is governed strictly by Chrome's `optional_host_permissions` requested on-demand per authorized domain.
 - **SEC-02: Explicit User Execution**  
   No HTTP socket or web request is initiated automatically or in the background. Every request requires an explicit trigger (`Execute` or `Fetch`) by the user.
 - **SEC-03: Scope Guardian (Private Network Protection)**  
@@ -35,14 +35,14 @@ XEOO HACKBAR is designed with a strict **security-by-default, local-first** arch
 
 | Version | Supported | Security Maintenance |
 | :---: | :---: | :---: |
-| **v1.0.x** | ✅ Yes | Active Security Fixes |
-| < v1.0.0 | ❌ No | Deprecated |
+| **v1.1.x** | ✅ Yes | Active Security Fixes |
+| < v1.1.0 | ❌ No | Deprecated |
 
 ---
 
 ## 3. Reporting a Vulnerability
 
-We take the security and integrity of XEOO HACKBAR seriously. If you discover a security vulnerability or bypass in the extension runtime:
+We take the security and integrity of ZX HACKBAR seriously. If you discover a security vulnerability or bypass in the extension runtime:
 
 1. **Do not create a public GitHub issue.**
 2. Send an advisory detailing the vulnerability, reproduction steps, affected component, and suggested remediation to the repository maintainer.
@@ -53,6 +53,6 @@ We take the security and integrity of XEOO HACKBAR seriously. If you discover a 
 
 ## 4. Operational Boundaries & Legal Notice
 
-XEOO HACKBAR is strictly intended for **authorized penetration testing, CTF security competitions, web development debugging, and academic security analysis**. Use of this extension against systems without prior explicit written permission from the target owner is strictly prohibited and illegal under applicable cybercrime legislation.
+ZX HACKBAR is strictly intended for **authorized penetration testing, CTF security competitions, web development debugging, and academic security analysis**. Use of this extension against systems without prior explicit written permission from the target owner is strictly prohibited and illegal under applicable cybercrime legislation.
 
 Refer to [DISCLAIMER.md](../DISCLAIMER.md) and [PRIVACY.md](../PRIVACY.md) for full liability and privacy terms.

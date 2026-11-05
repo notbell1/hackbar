@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module PayloadLibraryPage
  * @author Zone Xploiter / ZXMarchia
@@ -171,7 +171,7 @@ export const PayloadLibraryPage: React.FC = () => {
     const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(payloads, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', dataStr);
-    downloadAnchor.setAttribute('download', `xeoo_hackbar_payloads_${Date.now()}.json`);
+    downloadAnchor.setAttribute('download', `zx_hackbar_payloads_${Date.now()}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

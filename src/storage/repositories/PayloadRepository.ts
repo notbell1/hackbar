@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module PayloadRepository
  * @author Zone Xploiter / ZXMarchia
@@ -329,7 +329,7 @@ export const STANDARD_PAYLOADS: Omit<PayloadItem, 'id'>[] = [
     title: 'CRLF Set-Cookie Response Splitting',
     category: 'Open Redirect & CRLF',
     subcategory: 'CRLF Injection',
-    content: '%0d%0aSet-Cookie: session=xeoo_hackbar_test; path=/',
+    content: '%0d%0aSet-Cookie: session=zx_hackbar_test; path=/',
     description: 'Injects Carriage Return & Line Feed to insert arbitrary Set-Cookie response header.',
     tags: ['crlf', 'response-splitting', 'cookie-injection'],
     isFavorite: false,

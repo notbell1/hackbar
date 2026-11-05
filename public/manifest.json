@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "XEOO HACKBAR",
-  "version": "1.0.0",
+  "name": "ZX HACKBAR",
+  "version": "1.1.0",
   "description": "Modern Web Security Testing & HTTP Inspection Browser Extension",
   "background": {
     "service_worker": "background.js",
@@ -22,7 +22,7 @@
     "https://*/*"
   ],
   "action": {
-    "default_title": "Xeoo Hackbar"
+    "default_title": "ZX Hackbar"
   },
   "icons": {
     "16": "icons/icon-16.png",

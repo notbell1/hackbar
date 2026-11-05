@@ -1,5 +1,5 @@
 /**
- * XEOO HACKBAR — Security Testing & HTTP Inspection Chrome Extension
+ * ZX HACKBAR — Security Testing & HTTP Inspection Chrome Extension
  * 
  * @module DiosGenerator
  * @author Zone Xploiter / ZXMarchia
@@ -55,7 +55,7 @@ export function generateDiosHeader(
   }
 
   if (style === 'ascii') {
-    const raw = `\n=== [ Injected by ${cleanAuthor} - Xeoo Hackbar ] ===\n`;
+    const raw = `\n=== [ Injected by ${cleanAuthor} - ZX Hackbar ] ===\n`;
     return {
       rawText: raw,
       hex: stringToHex0x(raw),
@@ -65,7 +65,7 @@ export function generateDiosHeader(
 
   const option = DIOS_SIGNATURE_OPTIONS.find((o) => o.id === style) || DIOS_SIGNATURE_OPTIONS[0];
   const color = option.colorCode;
-  const rawHtml = `<font color=${color}><b>[ Injected by ${cleanAuthor} - Xeoo Hackbar ]</b></font><br>`;
+  const rawHtml = `<font color=${color}><b>[ Injected by ${cleanAuthor} - ZX Hackbar ]</b></font><br>`;
 
   return {
     rawText: rawHtml,
