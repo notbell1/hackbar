@@ -28,7 +28,7 @@
   <a href="#-instalasi">📦 Instalasi</a> •
   <a href="#-penggunaan">💬 Penggunaan</a> •
   <a href="PRIVACY.md">🔒 Privasi</a> •
-  <a href="https://github.com/notbell1/xeoo-hackbar/issues">🐛 Lapor Bug</a> •
+  <a href="https://github.com/Zone-Xploiter/hackbar/issues">🐛 Lapor Bug</a> •
   <a href="LICENSE">📄 Lisensi</a>
 </p>
 
@@ -142,7 +142,7 @@ Untuk rincian arsitektur teknis lebih lanjut, silakan baca [ARCHITECTURE.md](doc
 
 ```bash
 # 1. Clone repositori
-git clone https://github.com/notbell1/xeoo-hackbar.git
+git clone https://github.com/Zone-Xploiter/hackbar.git
 cd xeoo-hackbar
 
 # 2. Pasang dependensi
@@ -196,5 +196,5 @@ Baca ketentuan hukum selengkapnya di [DISCLAIMER.md](DISCLAIMER.md) dan kebijaka
 ## 📄 Lisensi & Kredit
 
 - **Author**: Zone Xploiter / ZXMarchia
-- **Repositori**: [https://github.com/notbell1/xeoo-hackbar](https://github.com/notbell1/xeoo-hackbar)
+- **Repositori**: [https://github.com/Zone-Xploiter/hackbar](https://github.com/Zone-Xploiter/hackbar)
 - **Lisensi**: [MIT License](LICENSE)
